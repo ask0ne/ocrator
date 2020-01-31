@@ -1,7 +1,7 @@
 # image-text_to_speech
 
 *******************************************************************************
-README
+## README
 *******************************************************************************
 
 TODO:<br>
@@ -13,15 +13,21 @@ Example: Scan any image with English text in it and output is English/Hindi
 audio.
 <br><br><br>
 *******************************************************************************
-LIBRARIES REQUIRED & SETUP
+## LIBRARIES REQUIRED & SETUP
 *******************************************************************************
 ->cv2<br>
 ->os<br>
-->pytesseract<br>
+->pytesseract  
 ->tkinter<br>
 ->googletrans<br>
-Manually download and install the pytesseract files from official website
-and make necessary changes in the code.<br>
-!Important without proper setup of pytesseract, the code won't work.
+
+### For Windows
+Download pytesseract from <a href="https://github.com/UB-Mannheim/tesseract/wiki">HERE</a>.<br>
+Make changes in LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
+Change USER to your Windows username.
+
+### For Linux
+Comment out LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
+
 <br><br>
 *******************************************************************************
