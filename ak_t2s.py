@@ -5,7 +5,6 @@ import cv2
 import pytesseract
 from gtts import gTTS
 import os
-import sys
 from googletrans import Translator
 
 translator = Translator()
@@ -14,20 +13,19 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kawad\AppData\Local\Tesseract
 
 class main(Tk):
     x = 1
-    file_name = ""
-
+    file_name = " "
 
     def __init__(self):
         super(main, self).__init__()
         self.title("Image Text to Speech")
         self.minsize(640, 400)
-        self.labelFrame = ttk.LabelFrame(self, text="Convert image text(English) into speech of below mentioned languages")
+        self.labelFrame = ttk.LabelFrame(self, text="Convert image text(English) into speech of below mentioned "
+                                                    "languages")
         self.labelFrame.grid(column=0, row=1, padx=20, pady=20)
         self.buttons()
 
-
     def buttons(self):
-        self.button = ttk.Button(self.labelFrame, text="Browse A File", command=self.fileDialog)
+        self.button = ttk.Button(self.labelFrame, text="Choose file", command=self.fileDialog)
         self.button.grid(column=1, row=1)
         self.button2 = ttk.Button(self.labelFrame, text="Exit", command=self.close_window)
         self.button2.grid(column=2, row=1)
@@ -36,20 +34,19 @@ class main(Tk):
         self.button4 = ttk.Button(self.labelFrame, text="Hindi", command=lambda: self.setx(2))
         self.button4.grid(column=2, row=2)
 
-
     def fileDialog(self):
-        self.filename = filedialog.askopenfilename(initialdir="/", title="Select A File", filetype=(("png files", "*.png"), ("jpeg files", "*.jpg"), ("all files", "*.*")))
-        self.img_speech(self.filename)
+        self.filename = filedialog.askopenfilename(initialdir="/", title="Select An Image", filetype=(("png files", "*.png"), ("jpeg files", "*.jpg"), ("all files", "*.*")))
+        self.label = ttk.Label(self.labelFrame, text="")
+        self.label.grid(column=3, row=3)
+        self.label.configure(text=("Image selected ->"+self.filename))
         global file_name
         file_name = self.filename
-
 
     def setx(self, a):
         global x, file_name
         x = a
-        if (file_name != ""):
+        if file_name != "":
             self.img_speech(file_name)
-
 
     def img_speech(self, address):
         img = cv2.imread(address)
