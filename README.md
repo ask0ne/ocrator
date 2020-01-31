@@ -19,6 +19,7 @@ LIBRARIES REQUIRED & SETUP
 ->os<br>
 ->pytesseract<br>
 ->tkinter<br>
+->googletrans<br>
 Manually download and install the pytesseract files from official website
 and make necessary changes in the code.<br>
 !Important without proper setup of pytesseract, the code won't work.
