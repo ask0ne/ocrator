@@ -26,5 +26,8 @@ Download pytesseract from <a href="https://github.com/UB-Mannheim/tesseract/wiki
 Make changes in LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
 Change USER to your Windows username.
 
+### For Linux
+Comment out LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
+
 <br><br>
 *******************************************************************************
