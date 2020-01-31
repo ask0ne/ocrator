@@ -8,7 +8,7 @@ import os
 from googletrans import Translator
 
 translator = Translator()
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kawad\AppData\Local\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
 
 
 class main(Tk):
