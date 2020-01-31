@@ -45,7 +45,7 @@ class main(Tk):
 
 
     def setx(self, a):
-        global x
+        global x, file_name
         x = a
         if (file_name != ""):
             self.img_speech(file_name)
