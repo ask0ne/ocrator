@@ -15,9 +15,9 @@ audio.
 *******************************************************************************
 ## LIBRARIES REQUIRED & SETUP
 *******************************************************************************
-->cv2<br>
+->opencv-python<br>
 ->os<br>
-->pytesseract  
+->pytesseract<br>
 ->tkinter<br>
 ->googletrans<br>
 
