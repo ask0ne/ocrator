@@ -8,7 +8,7 @@ import os
 from googletrans import Translator
 
 translator = Translator()
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kawad\AppData\Local\Tesseract-OCR\tesseract.exe'
 
 
 class main(Tk):
@@ -49,7 +49,8 @@ class main(Tk):
             self.img_speech(file_name)
 
     def img_speech(self, address):
-        img = cv2.imread(address)
+        img = cv2.imread(address, 0)
+        cv2.Canny(img, 100, 200)
         text = pytesseract.image_to_string(img)
         global x
         if x == 1:
