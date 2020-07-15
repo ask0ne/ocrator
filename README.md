@@ -1,4 +1,4 @@
-# Optical Character REcognition To Speech
+# ocrator
 
 *******************************************************************************
 ## README
@@ -15,11 +15,11 @@ audio.
 *******************************************************************************
 ## LIBRARIES REQUIRED & SETUP
 *******************************************************************************
-->opencv-python<br>
-->os<br>
-->pytesseract<br>
-->tkinter<br>
-->googletrans<br>
+-opencv-python<br>
+-os<br>
+-pytesseract<br>
+-tkinter<br>
+-googletrans<br>
 
 ### For Windows
 Download pytesseract from <a href="https://github.com/UB-Mannheim/tesseract/wiki">HERE</a>.<br>
