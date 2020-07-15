@@ -1,4 +1,4 @@
-# OCD_to_speech
+# Optical Character REcognition To Speech
 
 *******************************************************************************
 ## README
