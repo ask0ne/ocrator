@@ -2,7 +2,7 @@
 
 Scan a image with your phone and translate it into desired language speech output.
 <hr>
-## TO DO
+TO DO
 <hr>
 <ol>
   <li>Add camera input</li>
@@ -11,7 +11,7 @@ Scan a image with your phone and translate it into desired language speech outpu
 <br><br>
 <br><br><br>
 <hr>
-## LIBRARIES REQUIRED & SETUP
+LIBRARIES REQUIRED & SETUP
 <hr>
 
 <ul>
@@ -22,10 +22,10 @@ Scan a image with your phone and translate it into desired language speech outpu
   <li>googletrans</li>
 </ul>
 
-### For Windows
+##### Windows
 Download pytesseract from <a href="https://github.com/UB-Mannheim/tesseract/wiki">HERE</a>.<br>
 Make changes in LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
 Change USER to your Windows username.
 
-### For Linux
+##### Linux
 Comment out LINE 11: pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe'
